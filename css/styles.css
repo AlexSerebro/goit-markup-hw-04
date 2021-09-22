@@ -2,6 +2,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --button-accent-color: #188ce8;
   --primary-bg-color: #ffffff;
   --white-text-color: #ffffff;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
@@ -144,6 +145,8 @@ ul {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
+  display: flex;
 
   color: var(--primary-text-color);
   font-size: 14px;
@@ -151,6 +154,15 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.icon-header-svg {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.icon-header-svg:hover {
+  fill: var(--accent-color);
 }
 
 .contact-list {
@@ -218,6 +230,7 @@ ul {
 .hero-button:hover,
 .hero-button:focus {
   color: var(--title-text-color);
+  background-color: var(--button-accent-color);
 }
 
 /* features section */
@@ -232,8 +245,19 @@ ul {
 .features-list {
   width: 270px;
 }
+.icon {
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--sect-team-bg-color);
+}
+.features-svg {
+  width: 70px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 
-.features-list::before {
+/* .features-list::before {
   display: block;
   content: '';
   height: 120px;
@@ -254,7 +278,7 @@ ul {
 }
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
-}
+} */
 
 .features {
   display: none;
@@ -330,10 +354,43 @@ ul {
   text-align: center;
 }
 .text {
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.soc-list {
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 0;
+  display: flex;
+}
+.soc-blok {
+  margin-right: 10px;
+
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+}
+.soc-blok:hover {
+  background-color: var(--accent-color);
+}
+.icon-svg {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 12px;
+  fill: var(--primary-text-color);
+}
+
+.icon-svg:hover {
+  fill: var(--white-text-color);
+}
+
+.soc-link {
 }
 /* footer */
 .footer {
