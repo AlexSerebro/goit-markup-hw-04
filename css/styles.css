@@ -81,6 +81,19 @@ a:focus {
   text-align: center;
 }
 
+/* Скрыть заголовок */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 /* header */
 
 .main-nav {
@@ -179,10 +192,11 @@ a:focus {
 
 /* HERO section */
 .hero {
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
   background-color: var(--second-bg-color);
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .overlay {
@@ -241,12 +255,19 @@ a:focus {
 .features-section {
 }
 
-.list .features-list:not(:last-child) {
+/* .list .features-list:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 .features-list {
   width: 270px;
+}
+
+.features-list {
+  margin: 15px;
+}
+.features-ul {
+  margin: -15px;
 }
 .icon {
   height: 120px;
@@ -283,9 +304,6 @@ a:focus {
   background-image: url(../images/astronaut.svg);
 } */
 
-.features {
-  display: none;
-}
 .features-title {
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -588,10 +606,6 @@ a:focus {
 
 .portf-section {
   border-top: 1px solid #e5e5e5;
-}
-
-.hiden-title {
-  display: none;
 }
 
 .menu-list {
