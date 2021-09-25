@@ -32,10 +32,6 @@ ul {
   margin-bottom: 0;
 }
 
-a:focus {
-  outline: none;
-}
-
 .title {
   color: var(--title-text-color);
   font-size: 36px;
