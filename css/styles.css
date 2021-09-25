@@ -266,15 +266,16 @@ ul {
   margin: -15px;
 }
 .icon {
+  display: flex;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--sect-team-bg-color);
+  align-items: center;
+  justify-content: center;
 }
 .features-svg {
   width: 70px;
   height: 70px;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 
 /* .features-list::before {
@@ -438,17 +439,21 @@ ul {
 }
 .clients-blok {
   display: flex;
-  width: 170px;
-  height: 92px;
+
   margin-right: 30px;
 
   /* border: 1px solid var(--cliets-color);
   border-radius: 4px; */
 }
 .clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
   color: var(--cliets-color);
   border: 1px solid var(--cliets-color);
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 .clients-link:hover,
@@ -458,9 +463,8 @@ ul {
   fill: currentColor;
 }
 .clients-svg {
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
+  width: 106px;
+  height: 60px;
 
   fill: currentColor;
 }
