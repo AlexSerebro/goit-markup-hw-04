@@ -340,13 +340,17 @@ a:focus {
 .section-team {
   background-color: var(--sect-team-bg-color);
 }
-
+/* 
 .list .team-list:not(:last-child) {
   margin-right: 30px;
+} */
+.team-ul {
+  margin: -15px;
 }
-
 .team-list {
   background: #ffffff;
+  flex-basis: calc(100% / 4 -30px);
+  margin: 15px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -442,16 +446,19 @@ a:focus {
   height: 92px;
   margin-right: 30px;
 
-  border: 1px solid var(--cliets-color);
-  border-radius: 4px;
+  /* border: 1px solid var(--cliets-color);
+  border-radius: 4px; */
 }
 .clients-link {
   color: var(--cliets-color);
+  border: 1px solid var(--cliets-color);
+  border-radius: 4px;
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-color);
+  border-radius: 4px;
   fill: currentColor;
 }
 .clients-svg {
@@ -461,11 +468,11 @@ a:focus {
 
   fill: currentColor;
 }
-
+/* 
 .clients-svg:hover,
 .clients-svg:focus {
   fill: currentColor;
-}
+} */
 
 .clients-svg-item {
 }
