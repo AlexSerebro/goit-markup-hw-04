@@ -653,7 +653,6 @@ ul {
 
 .item-portf:hover,
 .item-portf:focus {
-  outline: none;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
