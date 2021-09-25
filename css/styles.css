@@ -483,11 +483,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-link {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-}
+
 .logo-footer {
   color: var(--white-text-color);
 }
@@ -508,6 +504,20 @@ ul {
 .footer-list {
   margin-right: auto;
   flex-direction: column;
+  text-align: left;
+}
+
+.footer-link-logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-align: left;
 }
 
